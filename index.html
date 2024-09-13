@@ -1,43 +1,27 @@
-:root{
-    --cor-fundo: #01080E ;
-    --cor-principal: #0B0D20 ;
-    --cor-secundaria: #212333; 
-    --cor-destaque: #2BDEFD;
-    --cor-texto: #D7F9FF;
-
-}
-
-body {
-    background-color: var(--cor-fundo);
-    color: var(--cor-texto);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
-.caixa-principal{
-    background-color: var(--cor-principal);
-    width: 90%;
-    max-width: 600px;
-    text-align: center;
-    padding: 20px;
-}
-
-h1{
-    color: var(--cor-destaque);
-}
-
-button {
-    background-color: var(--cor-secundaria);
-    color: var(--cor-texto);
-    border: none;
-    border-radius: 15px;
-    padding: 15px;
-    transition: background-color 0.3s;
-}
-
-button:hover{
-    background-color: var(--cor-destaque);
-    color: var(--cor-principal);
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes Sociais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Relatório das redes sociais</h1>
+        <nav>
+            <a href="index.html">Mundo</a>
+            <a href="#">Minha escola</a>
+        </nav>
+    </header>
+    <main class="graficos-section">
+        <section id="graficos-container" class="graficos-container">
+            <!-- crie os gráficos/texto aqui -->
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Gui Lima</p>
+    </footer>
+    <script type="module" src="graficos/informacoesGlobais.js"></script>
+</body>
+</html>
